@@ -1,6 +1,8 @@
 var fs = require('fs');
 var http = require('http');
 
+console.log("#VMwarePEX");
+
 // Load config info
 var config = JSON.parse(fs.readFileSync("./config.json", "utf-8"));
 var auth = 'Basic ' + new Buffer(config.username + ':' + config.password).toString('base64');
@@ -29,7 +31,7 @@ var req = https.request(options, function(res) {
 		for (var i = 0; i < tmp.length-1; i++) {
 			var tweet = JSON.parse(tmp[i]);
 			if (tweet.user) {
-				console.log(tweet.user.screen_name);
+				console.log(tweet.text);
 			}
 		}
 		buffer = tmp[tmp.length - 1];

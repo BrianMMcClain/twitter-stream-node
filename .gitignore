@@ -1,2 +1,4 @@
 node_modules
 test/config.json
+test/oauth.json
+test/oauth_test.js
