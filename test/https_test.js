@@ -1,8 +1,6 @@
 var fs = require('fs');
 var http = require('http');
 
-console.log("#VMwarePEX");
-
 // Load config info
 var config = JSON.parse(fs.readFileSync("./config.json", "utf-8"));
 var auth = 'Basic ' + new Buffer(config.username + ':' + config.password).toString('base64');
