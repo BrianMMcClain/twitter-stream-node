@@ -1,1 +1,1 @@
-twitter-node
+twitter-stream-node
