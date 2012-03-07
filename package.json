@@ -1,6 +1,18 @@
 {
-  "name": "twitter-node",
+  "name": "twitter-stream",
+  "description": "Node.js Twitter Stream Library",
   "version": "0.0.1",
-  "dependencies": {
+  "author": "Brian McClain",
+  "repository" : { "type" : "git",
+    "url" : "https://github.com/BrianMMcClain/twitter-stream-node"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "main" : "./lib/stream.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies" : {
   }
 }
